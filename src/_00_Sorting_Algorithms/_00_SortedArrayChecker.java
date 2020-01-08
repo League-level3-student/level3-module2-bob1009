@@ -23,10 +23,7 @@ static boolean intArraySorted(int[] array ) {
 	//   The method returns true if the double
 	//   array is in ascending order and false otherwise
 	static boolean doubleArraySorted(double[]array) {
-		while (true) {
-			type type = (type) en.nextElement();
-			
-		}
+		
 		return true;
 		
 	}

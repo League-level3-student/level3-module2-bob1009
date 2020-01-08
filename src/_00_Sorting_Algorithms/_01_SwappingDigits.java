@@ -44,24 +44,28 @@ class _01_SwappingDigits {
 	// Iterate through the array and when you find two elements that are out
 	// of order, swap them. Repeat this until the array is in order.
 	public static void sortIntArray(int[] arr) {
+		int space=0;
+		while (_00_SortedArrayChecker.intArraySorted(arr)==false) {
 		for (int i = 0; i < arr.length - 1; i++) {
 			System.out.println(arr[i]+"/"+arr[i+1]);
 			if (arr[i] > arr[i + 1]) {
-				int space=0;
 				space=arr[i];
 				arr[i] = arr[i+1];
-				arr[i]=space;
+				arr[i+1]=space;
 				System.out.println(arr[i]+"//"+arr[i+1]);
 			}
 		}
-	}
+	}}
 
 	// 3. Complete the method so that it finds the middle number in the array.
 	// *Hint* it helps to sort it first.
 	// *Double Hint* Use the method you already wrote in step 2 to sort it
 	public static int findMiddle(int[] arr) {
 		sortIntArray(arr);
+		int hold=0;
 		int middle = arr[0];
-		return 0;
+		hold=arr.length/2;
+		middle=arr[hold];
+		return middle;
 	}
 }
