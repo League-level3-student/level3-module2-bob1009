@@ -18,16 +18,16 @@ public class _01_SearchingAndSortingAlgorithms {
 	public void testSearch() {
 		List<String> eggs = Arrays.asList(new String[] { "whole", "whole", "whole", "whole", "cracked", "whole", "whole", "whole",
 				"cracked", "whole", "whole", "whole" });
-		assertEquals(4, Algorithms.findBrokenEgg(eggs));
+		assertEquals(4, Algorithms.findBrokenEgg(eggs));	
 	}
-
+	 
 	/* 2. Count how many oysters contain pearls. */
-//	@Test
-//	public void testSearchAndAccumulate() throws Exception {
-//		List<Boolean> oysters = Arrays.asList(new Boolean[] { false, false, true, false, false, false, false, false, false, false, false,
-//				false, false, false, false, false, false, false, false, false, false, false, false, true });
-//		assertEquals(2, Algorithms.countPearls(oysters));
-//	}
+	@Test
+	public void testSearchAndAccumulate() throws Exception {
+		List<Boolean> oysters = Arrays.asList(new Boolean[] { false, false, true, false, false, false, false, false, false, false, false,
+				false, false, false, false, false, false, false, false, false, false, false, false, true });
+		assertEquals(2, Algorithms.countPearls(oysters));
+	}
 
 	/* 3. Create a method that will return the height of the tallest person. */
 //	@Test
@@ -51,14 +51,13 @@ public class _01_SearchingAndSortingAlgorithms {
 	 * 5. The Morse code for SOS is "... --- ..."
 	 * Create a method that can tell if SOS is contained in a message.
 	 */
-//	@Test
-//	public void testFindString() throws Exception {
-//		List<String> message1 = Arrays.asList(".... . .-. .-. --- / ... --- ... / -.-- .- .-.. .-.. ...".split("/"));
-//		assertEquals(true, Algorithms.containsSOS(message1));
-//		List<String> message2 = Arrays
-//				.asList(".-- .. - .... / - .... . / .-.. .. --. .... - ... / --- ..- - --..-- / .. - .----. ... / .-.. . ... ... / -.. .- -. --. . .-. --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... / .. / ..-. . . .-.. / ... - ..- .--. .. -.. / .- -. -.. / -.-. --- -. - .- --. .. --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... / .- / -- ..- .-.. .- - - --- --..-- / .- -. / .- .-.. -... .. -. --- --..-- / .- / -- --- ... --.- ..- .. - --- --..-- / -- -.-- / .-.. .. -... .. -.. --- / -.-- . .- .... --..-- / .... . -.-- / -.-- . .- ....".split("/"));
-//		assertEquals(false, Algorithms.containsSOS(message2));
-//	}
+	@Test
+	public void testFindString() throws Exception {
+		List<String> message1 = Arrays.asList(".... . .-. .-. --- / ... --- ... / -.-- .- .-.. .-.. ...".split("/"));
+		assertEquals(true, Algorithms.containsSOS(message1));
+		List<String> message2 = Arrays.asList(".-- .. - .... / - .... . / .-.. .. --. .... - ... / --- ..- - --..-- / .. - .----. ... / .-.. . ... ... / -.. .- -. --. . .-. --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... / .. / ..-. . . .-.. / ... - ..- .--. .. -.. / .- -. -.. / -.-. --- -. - .- --. .. --- ..- ... / .... . .-. . / .-- . / .- .-. . / -. --- .-- ? / . -. - . .-. - .- .. -. / ..- ... / .- / -- ..- .-.. .- - - --- --..-- / .- -. / .- .-.. -... .. -. --- --..-- / .- / -- --- ... --.- ..- .. - --- --..-- / -- -.-- / .-.. .. -... .. -.. --- / -.-- . .- .... --..-- / .... . -.-- / -.-- . .- ....".split("/"));
+		assertEquals(false, Algorithms.containsSOS(message2));
+	}
 
 	/* 6. Write a morse code translator to read the messages. Just kidding! */
 
