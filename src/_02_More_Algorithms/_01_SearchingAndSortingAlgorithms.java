@@ -64,8 +64,7 @@ public class _01_SearchingAndSortingAlgorithms {
 	/* 7. Sort the exam results from lowest to highest. */
 //	@Test
 //	public void testSort() throws Exception {
-//		List<Double> results = Arrays.asList(new Double[] { 60.3, 60.2, 80.4, 67.2, 95.0, 85.5, 40.7, 68.2, 38.4, 94.2, 85.0, 84.5, 50.1,
-//				66.6 });
+//		List<Double> results = Arrays.asList(new Double[] { 60.3, 60.2, 80.4, 67.2, 95.0, 85.5, 40.7, 68.2, 38.4, 94.2, 85.0, 84.5, 50.1, 66.6 });
 //		assertEquals(38.4, Algorithms.sortScores(results).get(0), 0.0);
 //		assertEquals(40.7, Algorithms.sortScores(results).get(1), 0.0);
 //		assertEquals(95.0, Algorithms.sortScores(results).get(13), 0.0);

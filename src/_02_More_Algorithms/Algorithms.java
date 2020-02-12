@@ -2,6 +2,10 @@ package _02_More_Algorithms;
 
 import java.util.List;
 
+import org.junit.experimental.theories.FromDataPoints;
+
+import _00_Sorting_Algorithms._00_SortedArrayChecker;
+
 public class Algorithms {
 	public static int findBrokenEgg(List<String> eggs) {
 	
@@ -61,14 +65,34 @@ public class Algorithms {
 
 	public static List<String> sortScores(List<Double> results) {
 		double space=0;
-		for (int i = 0; i < results.size(); i++) {
-			if (results.get(i)>results.get(i+1)) {
-				space=results.get(i);
-				
-				
+		for (int j = 0; j < results.size(); j++) {
+		for (int i = j+1; i < results.size(); i++) {
+			if (results.get(j)>results.get(i)) {
+				space=results.get(j);
+				results.set(j, results.get(i));
+				results.set(i, space);
+			}
+		}}
+		
+		return null;
+}
+	public static List <Integer> Dna(List<String> unsortedSequences){
+		String space=null; 
+		for (int i = 0; i < unsortedSequences.size(); i++) {
+			for (int j = 0; j < unsortedSequences.size(); j++) {
+				if (unsortedSequences.get(i).length()>unsortedSequences.get(i+1).length()) {
+					space=unsortedSequences.get(i);
+					unsortedSequences.set(i,unsortedSequences.get(j));
+					unsortedSequences.set(j, space);
+				}
 			}
 		}
 		
 		return null;
 	}
+	public static List <String>sortword(List <String> words){
+		
+	}
 }
+
+
