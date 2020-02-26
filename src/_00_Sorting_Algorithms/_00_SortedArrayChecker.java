@@ -6,7 +6,7 @@ public class _00_SortedArrayChecker {
 	//   and it returns a boolean.
 	//   The method returns true if the integer
 	//   array is in ascending order and false otherwise
-static boolean intArraySorted(int[] array ) {
+ static boolean intArraySorted(int[] array ) {
 	for (int i = 0; i < array.length-1; i++) {
 		if(array[i]>array[i+1]) {
 		return false;
